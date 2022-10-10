@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: org.example.Runner.runners
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 532.724 s <<< FAILURE! - in org.example.Runner.runners
+org.example.Runner.runners.runScenario  Time elapsed: 27.894 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+

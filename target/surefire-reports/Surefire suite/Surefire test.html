@@ -1,0 +1,183 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Oct 09 22:07:33 EET 2022</td>
+</tr>
+<tr><td>Total time:</td><td>531 seconds (531018 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.example.Runner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user opens rss link", "Unknown"</td>
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at org.example.SDef.follow.isOpenedInNewTab(follow.java:39)
+	at ?.&quot;https://demo.nopcommerce.com/new-online-store-is-open&quot; is opened in new tab(file:///C:/Users/Abdo/IdeaProjects/E-CommerceProject/src/main/resources/features/follow.feature:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1412392963", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1412392963'><pre>java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at org.example.SDef.follow.isOpenedInNewTab(follow.java:39)
+	at ?.&quot;https://demo.nopcommerce.com/new-online-store-is-open&quot; is opened in new tab(file:///C:/Users/Abdo/IdeaProjects/E-CommerceProject/src/main/resources/features/follow.feature:15)
+</pre></div></td>
+<td>27</td>
+<td>org.example.Runner.runners@77ec78b9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.example.Runner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could search for product using sku", "Unknown"</td>
+<td></td>
+<td>34</td>
+<td>org.example.Runner.runners@77ec78b9</td></tr>
+<tr>
+<td title='org.example.Runner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could search for product using sku", "Unknown"</td>
+<td></td>
+<td>32</td>
+<td>org.example.Runner.runners@77ec78b9</td></tr>
+<tr>
+<td title='org.example.Runner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user want to hover on element", "Unknown"</td>
+<td></td>
+<td>27</td>
+<td>org.example.Runner.runners@77ec78b9</td></tr>
+<tr>
+<td title='org.example.Runner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could search using product name", "Unknown"</td>
+<td></td>
+<td>28</td>
+<td>org.example.Runner.runners@77ec78b9</td></tr>
+<tr>
+<td title='org.example.Runner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could search using product name", "Unknown"</td>
+<td></td>
+<td>27</td>
+<td>org.example.Runner.runners@77ec78b9</td></tr>
+<tr>
+<td title='org.example.Runner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could search for product using sku", "Unknown"</td>
+<td></td>
+<td>30</td>
+<td>org.example.Runner.runners@77ec78b9</td></tr>
+<tr>
+<td title='org.example.Runner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could search using product name", "Unknown"</td>
+<td></td>
+<td>27</td>
+<td>org.example.Runner.runners@77ec78b9</td></tr>
+<tr>
+<td title='org.example.Runner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user will click on wishlist icon in the third product to add it to wishlist", "Unknown"</td>
+<td></td>
+<td>26</td>
+<td>org.example.Runner.runners@77ec78b9</td></tr>
+<tr>
+<td title='org.example.Runner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user opens twitter link", "Unknown"</td>
+<td></td>
+<td>30</td>
+<td>org.example.Runner.runners@77ec78b9</td></tr>
+<tr>
+<td title='org.example.Runner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "guest user could register with valid data successfully", "F01_Register | users could register with new accounts"</td>
+<td></td>
+<td>32</td>
+<td>org.example.Runner.runners@77ec78b9</td></tr>
+<tr>
+<td title='org.example.Runner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could login with invalid email and password", "F02_Login | users could use login functionality to use their accounts"</td>
+<td></td>
+<td>32</td>
+<td>org.example.Runner.runners@77ec78b9</td></tr>
+<tr>
+<td title='org.example.Runner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user opens youtube link", "Unknown"</td>
+<td></td>
+<td>35</td>
+<td>org.example.Runner.runners@77ec78b9</td></tr>
+<tr>
+<td title='org.example.Runner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "go to website and Select Euro currency from the dropdown list on the top left of home page", "Unknown"</td>
+<td></td>
+<td>27</td>
+<td>org.example.Runner.runners@77ec78b9</td></tr>
+<tr>
+<td title='org.example.Runner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could login with valid email and password", "F02_Login | users could use login functionality to use their accounts"</td>
+<td></td>
+<td>39</td>
+<td>org.example.Runner.runners@77ec78b9</td></tr>
+<tr>
+<td title='org.example.Runner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user will click on wishlist icon in the third product to add it to wishlist", "Unknown"</td>
+<td></td>
+<td>32</td>
+<td>org.example.Runner.runners@77ec78b9</td></tr>
+<tr>
+<td title='org.example.Runner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user opens facebook link", "Unknown"</td>
+<td></td>
+<td>35</td>
+<td>org.example.Runner.runners@77ec78b9</td></tr>
+</table><p>
+</body>
+</html>
